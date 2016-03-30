@@ -56,20 +56,20 @@ def filewrite ():
 	return
 
 print "Helloooooooo."
-n1 = "Prakash"
-n2 = "Tejas"
-n3 = "Nirmala"
-prakash = "00:61:71:BE:24:E5"
+n1 = "name1"
+n2 = "name2"
+n3 = "name3"
+member1 = "00:61:71:BE:24:E5"
 tejas = "B4:8B:19:B7:10:21"
 nirmala = "C0:EE:FB:42:5A:82"
 
 while True:
 	print "Checking " + time.strftime("%a, %d %b %Y %H:%M:%S", time.gmtime())
-	result = bluetooth.lookup_name(prakash, timeout=5)
+	result = bluetooth.lookup_name(member1, timeout=5)
 	inoutprint (n1, result, 1)
-	result = bluetooth.lookup_name(tejas, timeout=5)	
+	result = bluetooth.lookup_name(member2, timeout=5)	
 	inoutprint (n2, result, 2)
-	result = bluetooth.lookup_name(nirmala, timeout=5)
+	result = bluetooth.lookup_name(member3, timeout=5)
 	inoutprint (n3, result, 3)
 	filewrite()	
 	time.sleep(5) 
